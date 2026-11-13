@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isaac Robinson | Computer Engineering Student</title>
+<meta name="description" content="Isaac Robinson is a computer engineering student at West Virginia University. He builds developer tools, AI assistants, and games. 2nd place, Claude Hackathon 2026.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<canvas id="board" aria-hidden="true"></canvas>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="site-header" id="header">
+  <a href="#top" class="brand">
+    <img class="brand-mark" src="logo.svg" alt="Big Rob Studios logo">
+    <span class="brand-text"><b>BIG ROB</b> STUDIOS</span>
+  </a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow in-up" style="--d:0">Computer Engineering &middot; West Virginia University</p>
+      <h1 class="in-up" style="--d:1"><span class="shimmer">Isaac Robinson</span></h1>
+      <p class="role in-up" style="--d:2">Software, AI, and hardware projects</p>
+      <p class="lede in-up" style="--d:3">I'm a computer engineering student who builds things people can use right away: tools that help developers, an AI assistant that runs my daily schedule, and a pixel-art robot game I'm writing from scratch.</p>
+      <div class="cta-row in-up" style="--d:4">
+        <a class="btn btn-primary" href="#projects">View my projects <span aria-hidden="true">&rarr;</span></a>
+        <a class="btn" href="https://www.linkedin.com/in/isaac-robinson-06840244b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/BigRob267" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <div class="hero-chip in-up" style="--d:2" aria-hidden="true">
+      <div class="orbit"><i></i><i></i><i></i></div>
+      <div class="chip-frame" id="tilt">
+        <img src="logo.svg" alt="">
+        <span class="sheen"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="stats" aria-label="Highlights">
+    <div class="stat"><b data-count="2" data-suffix="nd">0</b><span>Place at the 2026<br>Claude Hackathon</span></div>
+    <div class="stat"><b data-count="3">0</b><span>Active projects:<br>software, AI, and games</span></div>
+    <div class="stat"><b data-count="2030">0</b><span>Expected graduation,<br>B.S. Computer Engineering</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="panel">
+    <h2 class="silk">About</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a freshman at <strong>West Virginia University</strong> studying <strong>computer engineering</strong> with a minor in <strong>English</strong>. I learn by building real projects, then writing clearly about how they work.</p>
+        <p>This year I built Unravel, a tool that helps developers understand unfamiliar code, and took <strong>second place at the Claude Hackathon</strong>. I also run HEINZ, a personal AI assistant I designed myself, and I'm developing RUSTWATER, a robot-building game.</p>
+        <p>I'm looking for internships where I can contribute to software, IT, or embedded systems work while I keep learning.</p>
+      </div>
+      <ul class="spec">
+        <li><span>Location</span><b>Morgantown, WV</b></li>
+        <li><span>Education</span><b>B.S. Computer Engineering, WVU</b></li>
+        <li><span>Minor</span><b>English</b></li>
+        <li><span>Experience</span><b>Technician Intern, CAES (2025)</b></li>
+        <li><span>Looking for</span><b class="ok">Internships</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="panel">
+    <h2 class="silk">Projects</h2>
+
+    <article class="feature">
+      <div class="feature-badge">2nd place, Claude Hackathon 2026</div>
+      <div class="feature-body">
+        <h3>Unravel</h3>
+        <p class="kicker">Understand any codebase in minutes.</p>
+        <p>Unravel reads a software project and draws an interactive map of how its parts connect, so a new developer can see the big picture instead of reading thousands of files. It runs entirely in your browser, so your code is never uploaded. It also works as a Claude Code plugin that writes a plain-English <code>BLUEPRINT.md</code> for the project.</p>
+        <ul class="tags"><li>JavaScript</li><li>HTML Canvas</li><li>Claude Code plugin</li><li>Code analysis</li></ul>
+        <div class="card-links">
+          <a class="btn btn-primary" href="https://bigrob267.github.io/unravel/" target="_blank" rel="noopener">Try it live</a>
+          <a class="btn" href="https://github.com/BigRob267/unravel" target="_blank" rel="noopener">View the code</a>
+        </div>
+      </div>
+      <a class="feature-art shot" href="https://bigrob267.github.io/unravel/" target="_blank" rel="noopener"><img src="unravel.jpg" alt="Unravel showing an interactive architecture map of a project, with a health grade and file statistics" loading="lazy"></a>
+    </article>
+
+    <div class="project-grid">
+      <article class="chip-card">
+        <header><span class="state live">In daily use</span></header>
+        <h3>HEINZ</h3>
+        <p class="kicker">A personal AI assistant I designed and run myself.</p>
+        <p>HEINZ manages my calendar and tasks, takes voice commands, and controls my lighting and 3D printers through a custom desktop app. It runs across my desktop, laptop, and a Raspberry Pi, and I use it every day.</p>
+        <ul class="tags"><li>Python</li><li>Claude</li><li>MCP</li><li>Three.js</li></ul>
+        <footer><span class="note">Private project</span></footer>
+      </article>
+
+      <article class="chip-card">
+        <header><span class="state wip">In development</span></header>
+        <h3>RUSTWATER</h3>
+        <p class="kicker">A pixel-art game about building robots.</p>
+        <p>In RUSTWATER you build, upgrade, and command your own robots in a pixel-art world. I'm writing every part of it by hand in Python, from the game engine to the robots themselves, as a way to master the language. More to come as development continues.</p>
+        <ul class="tags"><li>Python</li><li>pygame-ce</li><li>Pixel art</li><li>Game design</li></ul>
+        <footer><span class="note">Updates coming soon</span></footer>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="panel">
+    <h2 class="silk">Skills</h2>
+    <div class="stack-grid">
+      <div><h4>Programming</h4><p>Python, JavaScript, HTML and CSS, PowerShell</p></div>
+      <div><h4>AI and Automation</h4><p>Claude, Claude Code, MCP integrations, AI agents</p></div>
+      <div><h4>Hardware and CAD</h4><p>Raspberry Pi, PC building, Autodesk Inventor, Blender, 3D printing</p></div>
+      <div><h4>Developer Tools</h4><p>Git and GitHub, Linux, SSH, Docker</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="panel contact">
+    <h2 class="silk">Contact</h2>
+    <p class="contact-big">Let's connect.</p>
+    <p class="contact-sub">I'm looking for internships in software, IT, and embedded systems. The best way to reach me is on LinkedIn.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/isaac-robinson-06840244b/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+      <a class="btn" href="https://github.com/BigRob267" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <img src="logo.svg" alt="" class="footer-mark">
+  <span>&copy; <span id="year"></span> Isaac Robinson &middot; Big Rob Studios</span>
+</footer>
+
+<script src="board.js"></script>
+</body>
+</html>
