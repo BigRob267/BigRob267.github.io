@@ -1,6 +1,18 @@
 // Portfolio behavior: slow circuit-board background, scroll progress, nav highlight, logo tilt,
 // card spotlight, stat count-up, scroll reveal. Respects prefers-reduced-motion.
 (() => {
+  /* ---------- console easter egg: ASCII logo for anyone who opens devtools ---------- */
+  console.log(
+    "%c" +
+    "      ___\n" +
+    "   __|_|_|__\n" +
+    "  |___ + ___|      BIG ROB STUDIOS\n" +
+    "   __|_|_|__\n" +
+    "     |_|_|\n",
+    "color:#f04004;font-family:monospace;font-size:13px;line-height:1.2;font-weight:bold;"
+  );
+  console.log("%cLooking under the hood — I respect that. Code's open: github.com/BigRob267", "color:#9a9a9a;font-family:monospace;font-size:12px;");
+
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- circuit board background (slow) ---------- */
